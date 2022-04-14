@@ -1,5 +1,7 @@
 #Using Tkinter, a feature of python to load the Gaphical User Interface
 from tkinter import *
+
+#connect with the database query file
 from connectdb import Connect
 from tkinter import messagebox
 
@@ -7,7 +9,8 @@ class My_bank:
 
     def __init__(self):
         self.cd = Connect()
-
+        
+        #Creating GUI
         self.root = Tk()
         self.root.title('Bank Registration')
 
@@ -26,7 +29,7 @@ class My_bank:
 
 
 
-
+    
     def load_reg_gui(self):
         self.clear_gui()
         self.label1 = Label(self.root, text="My Bank", bg='#2906A8', fg='#ffffff')
