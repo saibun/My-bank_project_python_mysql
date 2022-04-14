@@ -1,3 +1,4 @@
+#Using Tkinter, a feature of python to load the Gaphical User Interface
 from tkinter import *
 from connectdb import Connect
 from tkinter import messagebox
